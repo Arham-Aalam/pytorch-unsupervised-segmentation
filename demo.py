@@ -98,8 +98,8 @@ for batch_idx in range(args.maxIter):
     if args.visualize:
         im_target_rgb = np.array([label_colours[ c % 100 ] for c in im_target])
         im_target_rgb = im_target_rgb.reshape( im.shape ).astype( np.uint8 )
-        cv2.imshow( "output", im_target_rgb )
-        cv2.waitKey(10)
+        #cv2.imshow( "output", im_target_rgb )
+        #cv2.waitKey(10)
 
     # superpixel refinement
     # TODO: use Torch Variable instead of numpy for faster calculation
